@@ -1,6 +1,7 @@
 package io.daocloud.apollodemo;
 
 import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
+@Slf4j
 //@EnableApolloConfig(value = "first")
 public class ApollodemoApplication {
 	@Value("${server.port}")
@@ -18,7 +20,7 @@ public class ApollodemoApplication {
 
 	@GetMapping(value = "/port")
 	public String getPort() {
-
+		log.error("Something else is wrong here");
 		return "this ia apollodemo,port is "+port;
 	}
 

@@ -1,7 +1,7 @@
 ### 1.0 接入 eureka
-同Apollodemo2
+同Apollodemo
 ### 2.0 接入 apollo
-同Apollodemo2
+同Apollodemo
 ### 3.0 接入 openfeign
 1 添加openfeign依赖
 ```Finchley版本
