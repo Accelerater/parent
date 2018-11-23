@@ -20,7 +20,7 @@ public class ApollodemoApplication {
 
 	@GetMapping(value = "/port")
 	public String getPort() {
-		log.error("Something else is wrong here");
+		log.info("this is info");
 		return "this ia apollodemo,port is "+port;
 	}
 
